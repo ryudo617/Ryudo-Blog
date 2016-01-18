@@ -1,28 +1,10 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Note for step by step when making this blog
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+1. Make a new app
+2. Initialize Model and Controller
+3. Install gem: haml, simple_form, boostrap-sass, devise, ..
+4. Remember to commit when every step's done
+5. Push a little to github
+6. Decor with some Modal Popup
