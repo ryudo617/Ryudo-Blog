@@ -1,0 +1,7 @@
+%h1 All Posts Here
+%button.btn.btn-info(type="button" data-toggle="modal" data-target="#myModal") New Post
+= render 'form'
+- @posts.each do |post|
+  %h3= link_to post.title,post
+  %p= post.content
+  = "#{time_ago_in_words post.created_at} ago"

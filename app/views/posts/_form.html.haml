@@ -1,0 +1,15 @@
+= simple_form_for(Post.new, html:{clas:'form-horizontal'}) do |f|
+  %div.modal.fade#myModal(tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
+    %div.modal-dialog(role="document")
+      %div.modal-content
+        %div.modal-header
+          %button.close(type="button" data-dismiss="modal" aria-label="Close")
+            %span(aria-hidden="true") &times;
+          %h4.modal-title#myModalLabel New Post
+        
+        %div.modal-body
+          = f.input :title, label:"Tieu de",class:'form-group'
+          = f.input :content, label:'Noi dung',class:'form-group'
+        %div.modal-footer
+          %button.btn.btn-danger#mynewpostclose(type="button" data-dismiss="modal") Close
+          = f.submit 'Create', class:"btn btn-primary"
